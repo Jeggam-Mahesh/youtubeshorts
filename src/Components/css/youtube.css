@@ -27,6 +27,20 @@
      left:30vw; 
      color: white;
 }
+.TopIcon{
+position: absolute;
+color: white;
+top: 10vh;
+right: 20vw;
+font-size: xx-large;
+}
+.DownIcon{
+    position:absolute;
+    color: white;
+   top: 80vh;
+    right: 20vw;
+    font-size: xx-large;
+}
 @media screen and (max-width:860px){
     .shortDetails1{
         left:20vw;
