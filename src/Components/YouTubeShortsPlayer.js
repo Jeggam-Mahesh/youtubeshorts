@@ -130,6 +130,7 @@ const YouTubeShortsPlayer = ({ videos }) => {
   const playerRef = useRef(null);
 
   const handleSwipe = (direction) => {
+    console.log("Swipe direction:", direction);
     if (direction === 'up' && currentVideoIndex < videos.length - 1) {
       setCurrentVideoIndex((prevIndex) => prevIndex + 1);
       setIsPlaying(true);
@@ -180,10 +181,15 @@ const YouTubeShortsPlayer = ({ videos }) => {
   });
 
   return (
+    <>
     <div style={{ height: "90vh" }} className="youtube-shorts-player" {...handlers}>
       <ReactPlayer
         ref={playerRef}
         url={videos[currentVideoIndex].url}
+        config={{
+          youtube: {
+            playerVars: { showinfo: 1 }
+          },}}
         playing={isPlaying}
         controls={false}
         onProgress={handleVideoProgress}
@@ -209,14 +215,13 @@ const YouTubeShortsPlayer = ({ videos }) => {
           <p>20</p>
         </div>
 
-        <div className="shortsVideoSideIcon">
-          <RiShareForwardFill className='icons' size={30} />
-          <p>share</p>
-        </div>
+       
       </div>
       <FaArrowUpLong onClick={handlePrevVideo} className="TopIcon" />
       <FaArrowDownLong onClick={handleNextVideo} className="DownIcon" />
     </div>
+   
+    </>
   );
 };
 
