@@ -1,8 +1,8 @@
 // import Chart  from 'chart.js/auto';   
-import { useState } from 'react';
+// import { useState } from 'react';
 import './App.css';
-import Videos from './Components/Vedios'
-import data from './Components/Data'
+// import Videos from './Components/Vedios'
+// import data from './Components/Data'
 // import { Bar } from 'react-chartjs-2';
 import vedioData from './Components/Data';
 import YouTubeShortsPlayer from './Components/YouTubeShortsPlayer';
@@ -26,8 +26,8 @@ import YouTubeShortsPlayer from './Components/YouTubeShortsPlayer';
 // }
 
 function App() {
-  const [ytVideo,setYtvedio]=useState(data)
-  console.log("ytVideo==",ytVideo);
+  // const [ytVideo,setYtvedio]=useState(data)
+  // console.log("ytVideo==",ytVideo);
   return (
     // <div className="App" style={{height:"80vh",width:"70vw",alignContent:"center"}}>
     //  <Bar  options={options} data={data}/>
