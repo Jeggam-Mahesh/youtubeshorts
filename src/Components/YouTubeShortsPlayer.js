@@ -3,8 +3,8 @@ import React, { useState, useRef } from 'react';
 import ReactPlayer from 'react-player';
 import { useSwipeable } from 'react-swipeable';
 import './css/youtube.css'
-import { RxAvatar } from "react-icons/rx";
-import { FaArrowLeft } from "react-icons/fa";
+// import { RxAvatar } from "react-icons/rx";
+// import { FaArrowLeft } from "react-icons/fa";
 import { MdOutlineInsertComment } from "react-icons/md";
 import { AiTwotoneLike } from "react-icons/ai";
 import { AiTwotoneDislike } from "react-icons/ai";
