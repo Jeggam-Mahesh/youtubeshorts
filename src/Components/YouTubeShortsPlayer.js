@@ -7,6 +7,7 @@ import { FaArrowUpLong, FaArrowDownLong } from "react-icons/fa6";
 import { MdOutlineInsertComment } from "react-icons/md";
 import { AiTwotoneLike } from "react-icons/ai";
 import { AiTwotoneDislike } from "react-icons/ai";
+import SampleComp from '../new folder/SampleComp';
 
 
 const YouTubeShortsPlayer = ({ videos }) => {
@@ -16,7 +17,7 @@ const YouTubeShortsPlayer = ({ videos }) => {
   const [played, setPlayed] = useState(0);
 
   const playerRef = useRef(null);
-
+console.log("you tube app is running")
   const handleSwipe = (direction) => {
     console.log("Swipe direction:", direction);
     if (direction === 'up' && currentVideoIndex < videos.length - 1) {
@@ -105,6 +106,7 @@ const YouTubeShortsPlayer = ({ videos }) => {
 
        
       </div>
+      <SampleComp/>
       <FaArrowUpLong onClick={handlePrevVideo} className="TopIcon" />
       <FaArrowDownLong onClick={handleNextVideo} className="DownIcon" />
     </div>
